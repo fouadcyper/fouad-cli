@@ -1,86 +1,57 @@
+<div align="center">
+
 # FOUAD CLI
 
-![FOUAD CLI](assets/fouad-banner.png)
+### Download media from the terminal or desktop interface
 
-أداة سطر أوامر لتنزيل الفيديو والصور والصوت من منصات التواصل الاجتماعي المدعومة.
+<p>
+  <img src="https://img.shields.io/badge/Node.js-20%2B-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Platforms-13%2B-22d3ee?style=for-the-badge" alt="Platforms" />
+  <img src="https://img.shields.io/badge/License-GPL--3.0-a78bfa?style=for-the-badge" alt="GPL-3.0" />
+</p>
 
-[![Node.js](https://img.shields.io/badge/Node.js-20%2B-339933)](https://nodejs.org/)
-[![License](https://img.shields.io/badge/License-GPL--3.0-blue)](LICENSE)
+</div>
 
-## المميزات
+FOUAD CLI is a practical Node.js utility for downloading supported video, image, and audio content through a clean desktop experience or direct terminal commands.
 
-- دعم TikTok وInstagram وYouTube وFacebook وX/Twitter.
-- دعم Spotify وApple Music وPinterest وCapCut وBluesky.
-- دعم Douyin وRedNote وThreads وKuaishou وWeibo.
-- اختيار الجودة والصيغة حسب المنصة.
-- وضع تفاعلي وأوامر مباشرة.
-- مجلد التنزيل الافتراضي `fouad_downloads`.
+## Supported platforms
 
-## المتطلبات
+TikTok · Instagram · YouTube · Facebook · X/Twitter · Spotify · Apple Music · Pinterest · CapCut · Bluesky · Douyin · RedNote · Threads · Kuaishou · Weibo
 
-- Node.js 20 أو أحدث.
-- npm واتصال بالإنترنت.
-
-## التثبيت
+## Quick start
 
 ```bash
-git clone https://github.com/FOUAD_USERNAME/fouad-cli.git
+git clone https://github.com/fouadcyper/fouad-cli.git
 cd fouad-cli
 npm install
-```
-
-استبدل `FOUAD_USERNAME` باسم حساب Fouad على GitHub بعد نشر المستودع.
-
-## التشغيل
-
-```bash
 npm start
 ```
 
-يفتح هذا الأمر تطبيق Fouad الرسومي. يحفظ التطبيق الملفات تلقائيًا داخل
-`~/Downloads/Fouad`، ويمكن فتح المجلد مباشرة من الواجهة.
-
-لتشغيل الواجهة القديمة في الطرفية:
+For the terminal interface:
 
 ```bash
 npm run cli
-```
-
-على Linux وmacOS وTermux يمكن أيضًا تشغيل `./fouad.sh`، وعلى Windows شغّل
-`fouad.bat`.
-
-## الأوامر
-
-- `/help` عرض المساعدة.
-- `/tutor` عرض شرح سريع.
-- `/platform` عرض المنصات المدعومة.
-- `/path` عرض مجلد التنزيل.
-- `/setpath <directory>` تغيير مجلد التنزيل.
-- `/clear` تنظيف الشاشة.
-- `/quit` إغلاق الأداة.
-
-تشغيل مباشر:
-
-```bash
 node index.js youtube "URL"
 node index.js instagram "URL"
-node index.js --path my_downloads tiktok "URL"
 ```
 
-## الاستخدام المسؤول
+On Linux and macOS:
 
-نزّل فقط المحتوى الذي تملكه أو لديك إذن بتنزيله، والتزم بشروط المنصة والقوانين المعمول بها.
+```bash
+./fouad.sh
+```
 
-## الحقوق والترخيص
+## Features
 
-هوية FOUAD والتعديلات التي أُجريت سنة 2026:
+- Quality and format selection per platform.
+- Interactive mode and direct commands.
+- Configurable download location.
+- Desktop and terminal workflows from the same project.
 
-Copyright © 2026 Fouad.
+## Responsible use
 
-هذا المشروع نسخة معدّلة من برنامج مفتوح المصدر، ويوزّع وفق ترخيص
-[GNU General Public License v3.0](LICENSE). يسمح الترخيص بالاستخدام والتعديل
-والتوزيع، بما فيه التوزيع التجاري، بشرط الالتزام بكامل شروط GPL-3.0 وتوفير
-المصدر والإبقاء على إشعارات الحقوق والترخيص. راجع [NOTICE](NOTICE) لمعرفة نسب
-المصدر والتعديلات.
+Download only content you own or have permission to download. Follow each platform's terms and applicable laws.
 
-لا يقدم البرنامج أي ضمان.
+## License
+
+Distributed under the GNU GPL v3.0. See [LICENSE](LICENSE).
