@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101413">
+  <meta name="description" content="Fouad media downloader desktop app">
+  <title>Fouad — Media downloader</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to downloader</a>
+  <div class="grain"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Fouad home"><span class="brand-mark">F</span><span>FOUAD</span></a>
+    <div class="top-actions"><span class="status-dot"><i></i> Local & private</span><button class="icon-button" id="openFolder" title="Open downloads folder" aria-label="Open downloads folder">↗</button></div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="eyebrow"><span>01</span> Universal media utility</div>
+      <h1>Keep the media.<br><em>Skip the friction.</em></h1>
+      <p class="lede">Paste a public link. Fouad recognizes the platform and saves the best available media directly to your Downloads folder.</p>
+
+      <form class="download-box" id="downloadForm" novalidate>
+        <label for="mediaUrl">Media link</label>
+        <div class="input-row">
+          <div class="input-shell"><span class="link-glyph">⌁</span><input id="mediaUrl" type="url" inputmode="url" autocomplete="url" placeholder="Paste a TikTok, Instagram, YouTube link…" required></div>
+          <button class="download-button" type="submit"><span>Download</span><b>↓</b></button>
+        </div>
+        <div class="field-footer"><span id="hint">15 platforms. One clean workflow.</span><button type="button" id="pasteButton">Paste from clipboard</button></div>
+      </form>
+
+      <div class="job-panel" id="jobPanel" hidden aria-live="polite">
+        <div class="job-head"><div><span class="job-label" id="jobLabel">Working</span><h2 id="jobTitle">Reading your link</h2></div><div class="spinner" id="spinner"></div></div>
+        <div class="progress"><i id="progressBar"></i></div>
+        <pre id="jobLog">Preparing download…</pre>
+        <button id="showResult" class="result-button" type="button" hidden>Show downloaded file <span>↗</span></button>
+      </div>
+    </section>
+
+    <aside class="rail" aria-label="Supported services">
+      <div class="rail-head"><span>SUPPORTED</span><b id="platformCount">15</b></div>
+      <div class="platform-list" id="platformList"></div>
+      <div class="folder-card"><span>FILES SAVE TO</span><p id="downloadPath">~/Downloads/Fouad</p><button id="openFolderSecondary">Open folder <b>↗</b></button></div>
+    </aside>
+  </main>
+
+  <footer><span>FOUAD / <b id="version">1.3.5</b></span><span>Download only media you own or have permission to use.</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
