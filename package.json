@@ -41,7 +41,7 @@
     "termux"
   ],
   "dependencies": {
-    "axios": "^1.6.0",
+    "axios": "^1.20.0",
     "chalk": "^4.1.2",
     "commander": "^11.1.0",
     "figlet": "^1.7.0",
